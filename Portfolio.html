@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initical-scale=1.0"/>
+        <title>Portfólio Matheus Ferreira</title>
+        <style>
+            :root {
+                --azul-escuro: #1E3A8A;
+                --azul-claro: #E0F2FE;
+                --azul-hover: #2563EB;
+                --texto-claro: #ffffff;
+                --texto-escuro: #0F172A;
+            }
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #0b3d91;
+                color: #fff;
+                position: relative;
+                cursor: none;
+            }
+            .navbar {
+                background-color: var(--texto-escuro);
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                padding: 10px 0;
+                box-shadow: var(--texto-escuro);
+            }
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                transition: color 0.3s;
+            }
+            .navbar li a:hover {
+                color: var(--azul-claro);
+            }
+            #habilidades ul li{
+                margin-bottom: 10px;
+            }
+            header {
+                background-color: var(--texto-escuro);
+                color: var(--azul-claro);
+                padding: 20px;
+                text-align: center;
+            }
+            section {
+                padding: 40px 20px;
+                max-width: 800px;
+                margin: auto;
+            }
+            h1 {
+                color: var(--texto-claro);
+                text-align: center;
+                text-decoration: none;
+            }
+            h2 {
+                color: var(--azul-claro);
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: 1.6;
+                text-align: center;
+            }
+            .projeto {
+                background: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                background-color: var(--texto-escuro);
+                border-left: 4px solid var(--azul-hover);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                text-decoration: none;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: var(--texto-escuro);
+                color: antiquewhite;
+            }
+            .contato a {
+                color: var(--texto-claro);
+                text-decoration: none;
+            }
+            .contato a:hover {
+                text-decoration: underline;
+            }
+            ul {
+                padding-left: 20px;
+            }
+            h3 a {
+                color: #fff;
+            }
+            .cursor-light {
+                position: fixed;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                pointer-events: none;
+                background: radial-gradient(circle, rgba(6, 39, 59, 0.423) 0%, transparent 80%);
+                z-index: 9999;
+                mix-blend-mode: screen;
+                transition: transform 0.03s linear;
+            }
+            ul li a {
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="cursor-light" id="cursor-light"></div>
+            <nav class="navbar">
+            <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#projeto">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contatos</a></li>
+            </ul>
+            </nav>
+            <header>
+                <h1>Matheus Ferreira M.</h1>
+                <p>Desenvolvedor em aprendizado</p>
+            </header>
+            <section id="Sobre">
+                <h2>Sobre Mim</h2>
+                <p>Sou um jovem desenvolvedor apaixonado por tecnologia e inovação. Atualmente estou aprendendo JavaScript, Node.js, Banco de Dados SQL e desenvolvendo sistemas completos como o Safemind.</p>
+            </section>
+            <section id="projeto">
+                <h2>Meus Projetos</h2>
+            <div class="projeto">
+                <h3><a href="https://github.com/ferreirascf/Safemind.git">Safemind</a></h3>
+                <p>O Safemind foi desenvolvido para inovar o mercado de saúde mental, com fácil acesso a terapias, testes de comportamento e muito mais (em desenvolvimento).</p>
+            </div>
+            <div class="projeto">
+                <h3><a href="https://github.com/ferreirascf/meu.portfolio.git">Portfólio Pessoal</a></h3>
+                <p>Este site foi criado para mostrar meus trabalhos e evolução como desenvolvedor.</p>
+            </div>
+            <div class="projeto">
+                <h3><a href="https://github.com/ferreirascf/me.contrata.git">Me contratar?</a></h3>
+                <p>Este foi um projeto simples para brincar com o JavaScript, HTML e CSS.</p>
+            </div>
+            </section>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+            <ul>
+            <li>HTML e CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js com Express</li>
+            <li>Banco de Dados (PostgreSQL)</li>
+            <li><a href="https://docs.google.com/document/d/1hvuWwB9ChfGnjB7FnLgqpXEZGrdxJ0-0NIXYH3xsB00/edit?usp=sharing">Currículo profissional clique aqui</a></li>
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contatos</h2>
+            <div class="contato">
+            <p>Email - matheusmartins09138@gmail.com</p>
+            <p>WhatsApp - <a href="https://wa.me/5551999231747" target="_blank">(51) 99923-1747</a></p>
+            <p>Instagram - <a href="https://instagram.com/ferreirascf" target="_blank">@ferreirascf</a></p>
+            <p>LinkedIn - <a href="https://www.linkedin.com/in/ferreirascf" target="_blank">@ferreirascf</a></p>
+            <p>GitHub - <a href="https://github.com/ferreirascf">@ferreirascf</a></p>
+            </div>
+        </section>
+            <footer>
+            <p>2025 - Matheus Ferreira M.</p>
+            </footer>
+                <script>
+                const light = document.getElementById('cursor-light');
+                document.addEventListener('mousemove', (e) => {
+                light.style.transform = `translate(${e.clientX - 50}px, ${e.clientY - 50}px)`;
+            });
+        </script>
+    </body>
+</html>
